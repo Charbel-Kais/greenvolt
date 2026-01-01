@@ -1,0 +1,17 @@
+/* CSS HEX */
+--black-white: #fffffc;
+--rhino: #2e3b68;
+--wild-willow: #c2d06a;
+--woodland: #415c28;
+
+/* SCSS HEX */
+black-white: #fffffc;
+rhino: #2e3b68;
+wild-willow: #c2d06a;
+woodland: #415c28;
+
+/* SCSS RGB */
+black-white: rgba(255,255,252,1);
+rhino: rgba(46,59,104,1);
+wild-willow: rgba(194,208,106,1);
+woodland: rgba(65,92,40,1);
