@@ -11,7 +11,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 </head>
 
@@ -27,7 +27,15 @@
             <div class="navbar">
                 <div class="nav-items">
                     <img src="./assets/logo.png" class="nav-logo" loading="lazy" >
-                    <li class="nav-li">
+                    
+                    <!-- Hamburger Menu Button -->
+                    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    
+                    <li class="nav-li" id="navMenu">
                         <ul><a class="scroll-link" href="javascript:void(0)" data-target="hero">Home</a></ul>
                         <ul><a class="scroll-link" href="javascript:void(0)" data-target="miss">About</a></ul>
                         <ul><a class="scroll-link" href="javascript:void(0)" data-target="we-offer">Services</a></ul>
@@ -105,11 +113,12 @@
         <!-- ================= OTHER SECTIONS ================= -->
         <div class="trusted-by">
             <p class="trusted">Trusted by</p>
-            <img class="tr-i" src="./assets/Rectangle 7.png" loading="lazy">
-            <img class="tr-ii" src="./assets/Rectangle 8.png" loading="lazy">
-            <img class="tr-iii" src="./assets/Rectangle 9.png" loading="lazy">
-            <img class="tr-iv" src="./assets/Rectangle 10.png" loading="lazy">
-
+            <div class="trusted-grid">
+                <img class="tr-i" src="./assets/Rectangle 7.png" loading="lazy">
+                <img class="tr-ii" src="./assets/Rectangle 8.png" loading="lazy">
+                <img class="tr-iii" src="./assets/Rectangle 9.png" loading="lazy">
+                <img class="tr-iv" src="./assets/Rectangle 10.png" loading="lazy">
+            </div>
         </div>
         <div class="our-mission" id="miss">
             <div class="miss-left">
@@ -212,7 +221,7 @@ integrity is on the top of our priorities</p>
             <div class="his-l">
                 <p class="his-tittle">Our History</p>
                 <ul class="his-list">
-                    <li>Founded in 2023 during Lebanon’s fuel crisis, the company was created as a reliable alternative to costly and unreliable electricity from the grid and private generators. Instead of temporary fixes, it focused on practical solar power solutions..</li>
+                    <li>Founded in 2023 during Lebanon's fuel crisis, the company was created as a reliable alternative to costly and unreliable electricity from the grid and private generators. Instead of temporary fixes, it focused on practical solar power solutions..</li>
                     <li>Founded by Walid Kais, the company began by supplying solar panels, batteries, installation, and maintenance. As demand increased, a dedicated office and storage facility were opened, allowing operations to scale and projects to run more efficiently.</li>
                     <li>The team and client base grew, and the company now delivers industrial-level solar projects across Lebanon. What started as a crisis response became a nationwide operation.</li>
                     <li>Today, the company is based in Batloun, Al Shouf, serving clients across Lebanon, with a clear focus on growth, structured expansion, and larger-scale projects without compromising quality or reliability.</li>
@@ -267,5 +276,48 @@ integrity is on the top of our priorities</p>
 
     </div> <!-- /top-container -->
     <script src="../backend/script.javascript"></script>
+    
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.scroll-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('data-target');
+                const targetSection = document.getElementById(targetId);
+                
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Close mobile menu if open
+                    const navMenu = document.getElementById('navMenu');
+                    const hamburger = document.getElementById('hamburger');
+                    if (navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                        hamburger.classList.remove('active');
+                    }
+                }
+            });
+        });
+
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
