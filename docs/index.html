@@ -12,24 +12,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+    
     <div class="top-container">
+        
 
         <!-- ================= HERO SECTION ================= -->
-        <div class="hero">
+        <div class="hero" id="hero">
 
             <!-- Navbar -->
             <div class="navbar">
                 <div class="nav-items">
-                    <img src="./assets/logo.png" class="nav-logo">
+                    <img src="./assets/logo.png" class="nav-logo" loading="lazy" >
                     <li class="nav-li">
-                        <ul><link href="">Home</link></ul>
-                        <ul><link href="">About</link></ul>
-                        <ul><link href="">Services</link></ul>
-                        <ul><link href="">Contacts</link></ul>
-                    </li>
+                        <ul><a class="scroll-link" href="javascript:void(0)" data-target="hero">Home</a></ul>
+                        <ul><a class="scroll-link" href="javascript:void(0)" data-target="miss">About</a></ul>
+                        <ul><a class="scroll-link" href="javascript:void(0)" data-target="we-offer">Services</a></ul>
+                        <ul><a class="scroll-link" href="javascript:void(0)" data-target="footer">Contacts</a></ul>
+                    </li> 
                 </div>
             </div>
 
@@ -41,8 +44,8 @@
                     <p>Built for those who demand</p>
                     <p class="more">more</p>
                     <div class="hero-buttons">
-                        <button class="contact-but">Contact Us</button>
-                        <button class="learn-but">Learn More</button>
+                        <a class="contact-but" href="https://wa.me/96171558057">Contact Us</a>
+                        <a class="learn-but" href="javascript:void(0)" data-target="our-work">Our work</a>
                     </div>
                 </div>
 
@@ -102,13 +105,13 @@
         <!-- ================= OTHER SECTIONS ================= -->
         <div class="trusted-by">
             <p class="trusted">Trusted by</p>
-            <img src="./assets/Rectangle 7.png">
-            <img src="./assets/Rectangle 8.png">
-            <img src="./assets/Rectangle 9.png">
-            <img src="./assets/Rectangle 10.png">
+            <img class="tr-i" src="./assets/Rectangle 7.png" loading="lazy">
+            <img class="tr-ii" src="./assets/Rectangle 8.png" loading="lazy">
+            <img class="tr-iii" src="./assets/Rectangle 9.png" loading="lazy">
+            <img class="tr-iv" src="./assets/Rectangle 10.png" loading="lazy">
 
         </div>
-        <div class="our-mission">
+        <div class="our-mission" id="miss">
             <div class="miss-left">
                 <div class="miss-left-top">
                     <p class="miss-head">Our mission</p>
@@ -130,7 +133,7 @@
                 <img class="miss-img" src="./assets/about.png">
             </div>
         </div>
-        <div class="we-offer">
+        <div class="we-offer" id="we-offer">
             <div class="offer-heading">
                 <div class="head-dec-left"></div>
                 <p class="offer-head">We Offer</p>
@@ -165,7 +168,7 @@
                     <div class="bottom-card">
                         <div class="upper-card">
                             <div class="card-cont">
-                            <img src="./assets/settings.svg">
+                            <img src="./assets/settings.svg" loading="lazy">
                             <p>repairing & restoration of broken or damaged solar systems and equipment</p>
                             </div>
                         </div>
@@ -177,13 +180,13 @@
         <div class="specialisation">
             <div class="spec-tittle"><p class="spec-tittle-x">What seperates good from great</p></div>
             <div class="spec-col">
-                <img src="./assets/spanner-wrench-svgrepo-com 1.svg">
+                <img src="./assets/spanner-wrench-svgrepo-com 1.svg" loading="lazy">
                 <div class="vertic"></div>
-                <img src="./assets/receipt-alt-1-svgrepo-com 1.svg">
+                <img src="./assets/receipt-alt-1-svgrepo-com 1.svg" loading="lazy">
                 <div class="vertic"></div>
-                <img src="./assets/solar-panel-svgrepo-com 1.svg">
+                <img src="./assets/solar-panel-svgrepo-com 1.svg" loading="lazy">
                 <div class="vertic"></div>
-                <img src="./assets/castle-flag-svgrepo-com 1.svg">
+                <img src="./assets/castle-flag-svgrepo-com 1.svg" loading="lazy">
             </div>
             <div class="spec-txt">
                 <div>
@@ -192,8 +195,8 @@
                 </div>
                 <div>
                 <p class="spec-head">Transparancy prioritized</p>
-                <p class="spec-par">Because we value your time and money
-integrity is on th top of our priorities</p>
+                <p class="spec-par">Because we value your time and money,
+integrity is on the top of our priorities</p>
                 </div>
                 <div>
                 <p class="spec-head">Top quality materials</p>
@@ -205,7 +208,7 @@ integrity is on th top of our priorities</p>
                 </div>
             </div>
         </div>
-        <div class="history">
+        <div class="history" id="history">
             <div class="his-l">
                 <p class="his-tittle">Our History</p>
                 <ul class="his-list">
@@ -216,42 +219,42 @@ integrity is on th top of our priorities</p>
                 </ul>
             </div>
             <div class="his-r">
-                <img src="./assets/logo3.png">
+                <img src="./assets/logo3.png" loading="lazy">
             </div>
         </div>
-        <div class="our-work">
+        <div class="our-work" id="our-work">
             <div style="text-align: center;">
                 <p style="font-size: 64px; font-weight: 900; color: rgba(65, 92, 40, 1);">Our work</p>
                 <p style="font-size: 24px; color: rgba(65, 92, 40, 1);">Images speak louder than words ever could</p>
             </div>
             <div class="our-imgs">
-                <img src="./assets/Rectangle 19.jpg">
-                <img src="./assets/Rectangle 20.jpg">
-                <img src="./assets/Rectangle 21.jpg">
-                <img src="./assets/Rectangle 22.jpg">
+                <img src="./assets/Rectangle 19.jpg" loading="lazy">
+                <img src="./assets/Rectangle 20.jpg" loading="lazy">
+                <img src="./assets/Rectangle 21.jpg" loading="lazy">
+                <img src="./assets/Rectangle 22.jpg" loading="lazy">
             </div>
         </div>
 
         <!-- Footer -->
-        <div class="footer">
+        <div class="footer" id="footer">
             <div class="footer-l">
                 <div>
                 <p style="font-size: 48px; font-weight: 600;">Contact us</p>
                 <p style="font-size: 20px; font-weight:600;">We're here and ready to listen</p>
                 </div>
                 <div>
-                <img src="./assets/phone-call-svgrepo-com 1.svg">
+                <img src="./assets/phone-call-svgrepo-com 1.svg" loading="lazy">
                 <p style="font-size: 24px;">Phone</p>
                 <p style="font-size: 20px;">76 747 858</p>
                 <p style="font-size: 20px;">71 558 057</p>
                 </div>
                 <div>
-                <img src="./assets/email-svgrepo-com 1.svg">
+                <img src="./assets/email-svgrepo-com 1.svg" loading="lazy">
                 <p style="font-size: 24px;">Email</p>
                 <p>Example@email.com</p>
                 </div>
                 <div>
-                <img src="./assets/location-pin-svgrepo-com 1.png">
+                <img src="./assets/location-pin-svgrepo-com 1.png" loading="lazy">
                 <p style="font-size: 24px;">Office</p>
                 <a href="https://maps.app.goo.gl/idEECVny3Y7Ai9eH6">Location</a>
                 </div>
@@ -263,5 +266,6 @@ integrity is on th top of our priorities</p>
         </div>
 
     </div> <!-- /top-container -->
+    <script src="../backend/script.javascript"></script>
 </body>
 </html>

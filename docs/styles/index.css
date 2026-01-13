@@ -17,7 +17,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-height: 95vh;  
+    height: 95vh;  
+    width: 1450;
     background-image: url("../assets/hero-img.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -30,22 +31,24 @@
 /* ---------- Navbar ---------- */
 .navbar {
     height: 50px;
-    min-width: 98%;
+    width: 1400px;
     background-color: white;
     display: flex;
     border-radius: 18px;
     margin-top: 12px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
 }
 
 .nav-items {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    gap: 980px;
+    gap: 60%;
     font-weight: 450;
     color: #415C28;
+    width: 100%;
+
     
 }
 
@@ -58,7 +61,21 @@
     list-style: none;
     display: flex;
     gap: 6%;
-    font-size: 18px;
+    font-size: 20px;
+
+   
+
+}
+.nav-li a{
+    text-decoration: none;
+    color: #415C28;
+    
+}
+.nav-li a {
+
+}
+.nav-li a:hover{
+    color: rgba(46, 59, 104, 1);
 }
 
 /* ---------- Hero Content ---------- */
@@ -95,8 +112,25 @@
     gap: 20px;
     margin-right: 135px;
 }
+.contact-but:hover{
+    transform: scale(1.1);
+    color: rgba(46, 59, 104, 1);
+    border-color: rgba(46, 59, 104, 1);
+    transition: 0.2s;
+}
+.learn-but:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+
+    
+}
+
 
 .learn-but {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     width: 120px;
     height: 47px;
     background-color: #415C28;
@@ -105,9 +139,15 @@
     font-weight: 600;
     border-radius: 16px;
     border: none;
+    cursor: pointer;
+   
 }
 
 .contact-but {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     width: 120px;
     height: 47px;
     border-color: #415C28;
@@ -118,6 +158,7 @@
     font-size: 14px;
     font-weight: 600;
     border-radius: 16px;
+  
 }
 
 /* Hero Right */
@@ -135,6 +176,21 @@
     width: 330px;
     border-radius: 32px;
     background-color: rgba(65, 92, 40, 0.4);
+}
+.long-box:hover{
+    transform: scale(1.02);
+    background-color: #3c55257d;
+    transition: 0.3s;
+}
+.top-box:hover{
+    transform: scale(1.02);
+    background-color: #3c55257d;
+    transition: 0.5s; 
+}
+.bot-box:hover{
+        transform: scale(1.02);
+    background-color: #3c55257d;
+    transition: 0.5s;
 }
 
 .long-box-content {
@@ -214,6 +270,7 @@
     font-size: 30px;
 }
 
+
 /* ================= OTHER SECTIONS ================= */
 .trusted-by {
     min-width: 1440px;
@@ -222,8 +279,85 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 120px
+    gap: 120px;
+
 }
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+     /* Start 100px below final position */
+  }
+  to {
+    opacity: 1;
+   
+  }
+}
+
+/* 2. Apply the animation to the element */
+.tr-i {
+  /* Set initial state for unsupported browsers (optional, but good practice) */
+  opacity: 0; 
+
+
+  /* Define animation properties */
+  animation: fade-in-up linear forwards;
+  animation-duration: 1s; /* Animation duration */
+  animation-fill-mode: both; /* Retain the final state after animation */
+
+  /* Link the animation to the element's view progress */
+  animation-timeline: view();
+  /* Control when the animation starts and ends within the viewport */
+  animation-range: entry 10% cover 40%; /* Starts when 25% of element enters, finishes when 50% is visible */
+}
+.tr-ii {
+  /* Set initial state for unsupported browsers (optional, but good practice) */
+  opacity: 0; 
+
+
+  /* Define animation properties */
+  animation: fade-in-up linear forwards;
+  animation-duration: 1s; /* Animation duration */
+  animation-fill-mode: both; /* Retain the final state after animation */
+
+  /* Link the animation to the element's view progress */
+  animation-timeline: view();
+  /* Control when the animation starts and ends within the viewport */
+  animation-range: entry 10% cover 40%; /* Starts when 25% of element enters, finishes when 50% is visible */
+  animation-delay: 0.3s;
+}
+.tr-iii {
+  /* Set initial state for unsupported browsers (optional, but good practice) */
+  opacity: 0; 
+
+
+  /* Define animation properties */
+  animation: fade-in-up linear forwards;
+  animation-duration: 1s; /* Animation duration */
+  animation-fill-mode: both; /* Retain the final state after animation */
+
+  /* Link the animation to the element's view progress */
+  animation-timeline: view();
+  /* Control when the animation starts and ends within the viewport */
+  animation-range: entry 10% cover 40%; /* Starts when 25% of element enters, finishes when 50% is visible */
+  animation-delay: 0.6s;
+}
+.tr-iv {
+  /* Set initial state for unsupported browsers (optional, but good practice) */
+  opacity: 0; 
+
+
+  /* Define animation properties */
+  animation: fade-in-up linear forwards;
+  animation-duration: 1s; /* Animation duration */
+  animation-fill-mode: both; /* Retain the final state after animation */
+
+  /* Link the animation to the element's view progress */
+  animation-timeline: view();
+  /* Control when the animation starts and ends within the viewport */
+  animation-range: entry 10% cover 40%; /* Starts when 25% of element enters, finishes when 50% is visible */
+  animation-delay: 0.9s;
+}
+
 .trusted{
     color: rgba(46, 59, 104, 1);
     font-size: 48px;
@@ -354,6 +488,30 @@
     color: #415C28;
 
 }
+.inst {
+    height: 502px;
+    width: 413px;
+}
+.main {
+    height: 502px;
+    width: 413px;
+}
+.rep {
+    height: 502px;
+    width: 413px;
+}
+.inst:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+.main:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+.rep:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
 .offer-cards{
     display: flex;
     flex-direction: row;
@@ -372,6 +530,8 @@
     align-items: center;
     flex-direction: column;
     margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .specialisation {
@@ -506,4 +666,6 @@
     display: flex;
     gap: 50px;
 }
+
+
 
