@@ -1001,6 +1001,8 @@ html, body {
     .miss-list {
         margin-left: 0;
         padding-left: 2rem;
+        margin-bottom: 40px;
+        margin-left: 20px;
     }
 
     /* Service cards with proper spacing */
@@ -1019,12 +1021,12 @@ html, body {
 
     .bottom-card {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     .upper-card {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     /* We Offer - stack title */
@@ -1043,7 +1045,7 @@ html, body {
     }
 
     .spec-col {
-        flex-direction: column;
+    
     }
 
     .vertic {
@@ -1053,6 +1055,7 @@ html, body {
     .spec-tittle-x {
         font-size: 48px;
         margin-left: 0;
+        text-align: center;
     }
 
     .spec-head {
