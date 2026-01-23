@@ -914,6 +914,9 @@ html, body {
     .hamburger {
         display: flex;
     }
+    .long-box{
+        padding: 1rem;
+    }
 
     .nav-items {
         gap: 0;
