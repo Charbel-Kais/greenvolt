@@ -975,6 +975,7 @@ html, body {
     }
     .long-para{
         text-align: center;
+        margin-left: 0px;
     }
 
     /* Trusted by - 2x2 grid */
