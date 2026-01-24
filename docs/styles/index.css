@@ -968,6 +968,8 @@ html, body {
     .bot-box {
         width: 330px; /* same width for all boxes */
         max-width: 100%;
+
+
     }
 
     /* Center content inside boxes */
@@ -978,6 +980,8 @@ html, body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 15px;
+        
     }
 
     /* Padding for top and bottom boxes to prevent content overflow */
@@ -986,10 +990,12 @@ html, body {
         padding: 1rem;
     }
 
-    .top-par,
+    .top-para,
     .bot-box-para {
         padding-left: 1.5rem;
         width: 100%;
+        gap: 20px;
+        font-size: larger;
     }
 
     .long-para {
@@ -1166,7 +1172,7 @@ html, body {
 
     .top-par,
     .bot-box-para {
-        font-size: 24px;
+        font-size: 30px;
     }
 
     .trusted {
