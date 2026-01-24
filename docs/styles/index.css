@@ -433,7 +433,9 @@ html, body {
     flex-direction: column;
     gap: 40px;
 }
+.miss-eft-bot{
 
+}
 .miss-head{
     color: #415C28;
     font-weight: bold;
@@ -952,7 +954,7 @@ html, body {
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         background-image: url("../assets/hero-mobile-final.png");
-        background-position: center ;
+        background-position: center top;
         background-size:cover;
     }
 
