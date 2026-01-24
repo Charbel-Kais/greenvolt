@@ -911,12 +911,10 @@ html, body {
 }
 
 /* Mobile */
+/* Mobile */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
-    }
-    .long-box{
-    padding: 0rem;
     }
 
     .nav-items {
@@ -926,23 +924,19 @@ html, body {
 
     .nav-li {
         position: absolute;
-        top: calc(100% + 8px); /* directly below navbar */
+        top: calc(100% + 8px);
         left: 0;
         right: 0;
         margin: 0 auto;
-
         background-color: white;
         flex-direction: column;
         align-items: center;
-
         padding: 1rem 0;
         border-radius: 18px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-
         transform: translateY(0);
         opacity: 0;
         pointer-events: none;
-
     }
 
     .nav-li.active {
@@ -954,19 +948,39 @@ html, body {
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         background-image: url("../assets/hero-mobile-final.png");
-        background-position: center top;
+        background-position: center;
         background-size: cover;
     }
 
     .hero-left {
         font-size: 32px;
+        text-align: center;
     }
 
     .hero-right {
         flex-direction: column;
+        align-items: center; /* center all boxes */
     }
 
-    /* Fix hero boxes - prevent list items from sticking out */
+    /* Fix hero boxes - same width */
+    .long-box,
+    .top-box,
+    .bot-box {
+        width: 330px; /* same width for all boxes */
+        max-width: 100%;
+    }
+
+    /* Center content inside boxes */
+    .long-box-content,
+    .top-box-content,
+    .bot-box-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Padding for top and bottom boxes to prevent content overflow */
     .top-box,
     .bot-box {
         padding: 1rem;
@@ -977,7 +991,8 @@ html, body {
         padding-left: 1.5rem;
         width: 100%;
     }
-    .long-para{
+
+    .long-para {
         text-align: center;
         margin-left: 0px;
         width: 170px;
@@ -1017,12 +1032,11 @@ html, body {
         height: auto;
     }
 
-    /* Fix mission list items sticking out */
+    /* Fix mission list items */
     .miss-list {
-        margin-left: 0;
+        margin-left: 20px;
         padding-left: 2rem;
         margin-bottom: 40px;
-        margin-left: 20px;
     }
 
     /* Service cards with proper spacing */
@@ -1035,7 +1049,7 @@ html, body {
     .main,
     .rep {
         width: 100%;
-        max-width: 340px; /* VISUALLY CORRECT */
+        max-width: 340px;
         margin: 0 auto;
     }
 
@@ -1064,18 +1078,14 @@ html, body {
         width: 80px;
     }
 
-    .spec-col {
-    
-    }
-
-    .vertic {
-        height: 60px;
-    }
-
     .spec-tittle-x {
         font-size: 48px;
         margin-left: 0;
         text-align: center;
+    }
+
+    .vertic {
+        height: 60px;
     }
 
     .spec-head {
@@ -1127,6 +1137,7 @@ html, body {
         width: 100%;
     }
 }
+
 
 /* Small mobile */
 @media (max-width: 480px) {
