@@ -29,26 +29,26 @@ html, body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 95vh;  
+    height: 640px;  
     width: 100%;
     background-image: url("../assets/hero-img.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border-bottom-left-radius: 50px ;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 3.125rem ;
+    border-bottom-right-radius: 3.125rem;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* ---------- Navbar ---------- */
 .navbar {
     position: relative;
-    height: 50px;
-    width: 1400px;
+    height: 3.125rem;
+    width: 87.5rem;
     background-color: white;
     display: flex;
-    border-radius: 18px;
-    margin-top: 12px;
+    border-radius: 1.125rem;
+    margin-top: 0.75rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -66,7 +66,7 @@ html, body {
     margin-top: 3%;
     margin-left: 3%;
     border-radius: 100%;
-    height: 75px;
+    height: 4.6875rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -79,7 +79,7 @@ html, body {
     cursor: pointer;
     padding: 0.5rem;
     z-index: 1001;
-    gap: 4px;
+    gap: 0.25rem;
     margin-right: 3%;
 }
 
@@ -107,7 +107,7 @@ html, body {
     list-style: none;
     display: flex;
     gap: 6%;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .nav-li a{
@@ -129,16 +129,16 @@ html, body {
 
 /* Hero Left */
 .hero-left {
-    height: 350px;
-    width: 400px;
+    height: 21.875rem;
+    width: 25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 600;
-    margin-left: 100px;
-    margin-top: 50px;
+    margin-left: 6.25rem;
+    margin-top: 3.125rem;
     color: white;
 }
 
@@ -433,9 +433,7 @@ html, body {
     flex-direction: column;
     gap: 40px;
 }
-.miss-eft-bot{
 
-}
 .miss-head{
     color: #415C28;
     font-weight: bold;
@@ -658,7 +656,7 @@ html, body {
     width: 35%;
 }
 .his-img{
-    border-radius: 100%;
+    border-radius: 32px;
     height: 350px;
     width: 350px;
 }
@@ -736,6 +734,16 @@ html, body {
 
 /* Tablet and below */
 @media (max-width: 1024px) {
+    .nav-items {
+        display: flex;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .nav-li {
+        margin-right: 90px;
+    }
+
     .hero {
         height: auto;
         min-height: 95vh;
@@ -782,13 +790,20 @@ html, body {
     .bot-box {
         width: 100%;
         max-width: 330px;
+   
     }
 
     .trusted-by {
         min-width: 100%;
         flex-wrap: wrap;
         gap: 2rem;
-        padding: 2rem 1rem;
+        
+    }
+    .bot-box-para{
+        font-size: 1.7rem;
+    }
+    .long-box-content{
+        margin-top: 0px;
     }
 
     .our-mission {
@@ -801,6 +816,7 @@ html, body {
     .miss-right {
         width: 100%;
         max-width: 600px;
+        margin-bottom: 30px;
     }
 
     .miss-img {
@@ -947,14 +963,18 @@ html, body {
     .hero {
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        background-image: url("../assets/hero-mobile-final.png");
+        background-image: url("../assets/herom.jpg");
         background-position: center;
         background-size: cover;
+        min-height: fit-content;
     }
 
     .hero-left {
         font-size: 32px;
         text-align: center;
+        margin-top: 0px;
+        min-height: fit-content;
+        
     }
 
     .hero-right {
@@ -964,12 +984,18 @@ html, body {
 
     /* Fix hero boxes - same width */
     .long-box,
-    .top-box,
-    .bot-box {
+    .top-box{
+     
         width: 330px; /* same width for all boxes */
         max-width: 100%;
 
 
+    }
+    .bot-box{
+        width: 330px; /* same width for all boxes */
+        max-width: 100%;
+        font-size: 75%;
+  
     }
 
     /* Center content inside boxes */
@@ -1000,7 +1026,8 @@ html, body {
     .long-para {
         text-align: center;
         margin-left: 0px;
-        width: 200px;
+        margin-top: 0%;
+        width: 12.5rem;
     }
 
     /* Trusted by - 2x2 grid */
@@ -1061,7 +1088,9 @@ html, body {
     .bottom-card {
         width: 100%;
         height: 100%;
+        
     }
+    
 
     .upper-card {
         width: 100%;
@@ -1169,9 +1198,11 @@ html, body {
         font-size: 24px;
     }
 
-    .top-par,
-    .bot-box-para {
+    .top-par{
         font-size: 30px;
+    }
+    .bot-box-para {
+        font-size: 27px;
     }
 
     .trusted {
@@ -1213,4 +1244,248 @@ html, body {
     .his-list {
         font-size: 16px;
     }
-}
+}   
+
+
+    /* ================= 125% Scale Media Query ================= */
+    @media (max-width: 1477px) {
+
+ 
+
+    .nav-items {
+        display: flex;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .nav-li {
+        margin-right: 90px;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 40vh;
+        padding: 0 1rem;
+        width: 100%;
+        
+    }
+
+    .navbar {
+        width: calc(100% - 2rem);
+        max-width: 1400px;
+    }
+
+    .hero-und {
+        flex-direction: RO;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .hero-left {
+        width: 100%;
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+    
+
+    .more {
+        margin-right: 0;
+    }
+
+    .hero-buttons {
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .hero-right {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 75%;
+    
+    }
+
+    .long-box,
+    .top-box,
+    .bot-box {
+        width: 100%;
+        max-width: 330px;
+        padding-inline: 30px;
+    }
+
+    .trusted-by {
+        min-width: 100%;
+        flex-wrap: wrap;
+        gap: 2rem;
+        
+    }
+    .bot-box-para{
+        font-size: 1.7rem;
+    }
+    .long-para{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-left: 0%;
+    }
+    
+    .long-box-content{
+        margin-top: 0px;
+    }
+
+    .our-mission {
+        min-width: 100%;
+        flex-direction: row;
+        padding: 2rem 1rem;
+    }
+
+
+    .miss-left,
+    .miss-right {
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 30px;
+        gap: 50px;
+    }
+    .miss-head{
+        font-size: 3rem;
+    }
+
+
+    .miss-img {
+        width: 88%;
+        height: auto;
+    }
+    
+
+    .we-offer {
+        min-width: 100%;
+        padding: 2rem 1rem;
+        flex-direction: column;
+    }
+
+    .offer-cards {
+        gap: 20px;
+        width: 100%;
+        margin: 0%;
+
+    }
+    .upper-card,
+    .bottom-card{
+        width: 360px;
+        align-items: center;
+ 
+    }
+    .upper-card{
+        font-size: 1.9rem;
+    }
+
+
+
+    .specialisation {
+        min-width: 100%;
+        flex-direction: row;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+
+    .spec-tittle{
+        width: 100%;
+ 
+    }
+    .spec-col,
+    .spec-txt {
+        width: 100%;
+    }
+
+    .spec-col {
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 2rem 0;
+    }
+    .spec-head{
+        font-size: 1.5rem;
+    }
+    .spec-tittle-x{
+        font-size: 2.5rem;
+        margin-bottom: 400px
+    }
+
+
+    .vertic {
+        width: 5px;
+        height: 65px;
+    }
+
+    .spec-txt {
+        gap: 3rem;
+
+    }
+    
+
+    .history {
+        min-width: 100%;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 ;
+    }
+
+    .his-l,
+    .his-r {
+        width: 100%;
+        padding: 1.5rem;
+
+    }
+
+    .his-tittle {
+        margin-left: 0;
+
+    }
+
+    .his-list {
+        margin-left: 1.5rem;
+    }
+
+    .his-r img {
+        max-width: 400px;
+        
+    }
+
+    .our-work {
+        width: 100%;
+        padding: 2rem 1rem;
+        height: auto;
+    }
+
+    .our-imgs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .our-imgs img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .footer {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .footer-l,
+    .footer-r {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .footer-r iframe {
+        width: 100%;
+        max-width: 600px;
+        height: 400px;
+    }
+    }
+
