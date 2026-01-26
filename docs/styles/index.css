@@ -731,6 +731,248 @@ html, body {
 
 
 /* ================= RESPONSIVE MEDIA QUERIES ================= */
+ @media (max-width: 1477px) {
+
+ 
+
+    .nav-items {
+        display: flex;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .nav-li {
+        margin-right: 90px;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 40vh;
+        padding: 0 1rem;
+        width: 100%;
+        
+    }
+
+    .navbar {
+        width: calc(100% - 2rem);
+        max-width: 1400px;
+    }
+
+    .hero-und {
+        flex-direction: RO;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .hero-left {
+        width: 100%;
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+    
+
+    .more {
+        margin-right: 0;
+    }
+
+    .hero-buttons {
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .hero-right {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 75%;
+    
+    }
+
+    .long-box,
+    .top-box,
+    .bot-box {
+        width: 100%;
+        max-width: 330px;
+        padding-inline: 30px;
+    }
+
+    .trusted-by {
+        min-width: 100%;
+        flex-wrap: wrap;
+        gap: 2rem;
+        
+    }
+    .bot-box-para{
+        font-size: 1.7rem;
+    }
+    .long-para{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-left: 0%;
+    }
+    
+    .long-box-content{
+        margin-top: 0px;
+    }
+
+    .our-mission {
+        min-width: 100%;
+        flex-direction: row;
+        padding: 2rem 1rem;
+    }
+
+
+    .miss-left,
+    .miss-right {
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 30px;
+        gap: 50px;
+    }
+    .miss-head{
+        font-size: 3rem;
+    }
+
+
+    .miss-img {
+        width: 88%;
+        height: auto;
+    }
+    
+
+    .we-offer {
+        min-width: 100%;
+        padding: 2rem 1rem;
+        flex-direction: column;
+    }
+
+    .offer-cards {
+        gap: 20px;
+        width: 100%;
+        margin: 0%;
+
+    }
+    .upper-card,
+    .bottom-card{
+        width: 360px;
+        align-items: center;
+ 
+    }
+    .upper-card{
+        font-size: 1.9rem;
+    }
+
+
+
+    .specialisation {
+        min-width: 100%;
+        flex-direction: row;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+
+    .spec-tittle{
+        width: 100%;
+ 
+    }
+    .spec-col,
+    .spec-txt {
+        width: 100%;
+    }
+
+    .spec-col {
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 2rem 0;
+    }
+    .spec-head{
+        font-size: 1.5rem;
+    }
+    .spec-tittle-x{
+        font-size: 2.5rem;
+        margin-bottom: 400px
+    }
+
+
+    .vertic {
+        width: 5px;
+        height: 65px;
+    }
+
+    .spec-txt {
+        gap: 3rem;
+
+    }
+    
+
+    .history {
+        min-width: 100%;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 ;
+    }
+
+    .his-l,
+    .his-r {
+        width: 100%;
+        padding: 1.5rem;
+
+    }
+
+    .his-tittle {
+        margin-left: 0;
+
+    }
+
+    .his-list {
+        margin-left: 1.5rem;
+    }
+
+    .his-r img {
+        max-width: 400px;
+        
+    }
+
+    .our-work {
+        width: 100%;
+        padding: 2rem 1rem;
+        height: auto;
+    }
+
+    .our-imgs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .our-imgs img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .footer {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .footer-l,
+    .footer-r {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .footer-r iframe {
+        width: 100%;
+        max-width: 600px;
+        height: 400px;
+    }
+}
+
+
 
 /* Tablet and below */
 @media (max-width: 1024px) {
@@ -1247,245 +1489,5 @@ html, body {
 }   
 
 
-    /* ================= 125% Scale Media Query ================= */
-    @media (max-width: 1477px) {
 
- 
-
-    .nav-items {
-        display: flex;
-        gap: 0;
-        justify-content: space-between;
-    }
-
-    .nav-li {
-        margin-right: 90px;
-    }
-
-    .hero {
-        height: auto;
-        min-height: 40vh;
-        padding: 0 1rem;
-        width: 100%;
-        
-    }
-
-    .navbar {
-        width: calc(100% - 2rem);
-        max-width: 1400px;
-    }
-
-    .hero-und {
-        flex-direction: RO;
-        height: auto;
-        padding: 2rem 0;
-    }
-
-    .hero-left {
-        width: 100%;
-        margin-left: 0;
-        align-items: center;
-        text-align: center;
-    }
-    
-
-    .more {
-        margin-right: 0;
-    }
-
-    .hero-buttons {
-        margin-right: 0;
-        justify-content: center;
-    }
-
-    .hero-right {
-        width: 100%;
-        flex-direction: row;
-        justify-content: center;
-        font-size: 75%;
-    
-    }
-
-    .long-box,
-    .top-box,
-    .bot-box {
-        width: 100%;
-        max-width: 330px;
-        padding-inline: 30px;
-    }
-
-    .trusted-by {
-        min-width: 100%;
-        flex-wrap: wrap;
-        gap: 2rem;
-        
-    }
-    .bot-box-para{
-        font-size: 1.7rem;
-    }
-    .long-para{
-        font-size: 1.5rem;
-        text-align: center;
-        margin-left: 0%;
-    }
-    
-    .long-box-content{
-        margin-top: 0px;
-    }
-
-    .our-mission {
-        min-width: 100%;
-        flex-direction: row;
-        padding: 2rem 1rem;
-    }
-
-
-    .miss-left,
-    .miss-right {
-        width: 100%;
-        max-width: 600px;
-        margin-bottom: 30px;
-        gap: 50px;
-    }
-    .miss-head{
-        font-size: 3rem;
-    }
-
-
-    .miss-img {
-        width: 88%;
-        height: auto;
-    }
-    
-
-    .we-offer {
-        min-width: 100%;
-        padding: 2rem 1rem;
-        flex-direction: column;
-    }
-
-    .offer-cards {
-        gap: 20px;
-        width: 100%;
-        margin: 0%;
-
-    }
-    .upper-card,
-    .bottom-card{
-        width: 360px;
-        align-items: center;
- 
-    }
-    .upper-card{
-        font-size: 1.9rem;
-    }
-
-
-
-    .specialisation {
-        min-width: 100%;
-        flex-direction: row;
-        align-items: center;
-        padding: 2rem 1rem;
-    }
-
-    .spec-tittle{
-        width: 100%;
- 
-    }
-    .spec-col,
-    .spec-txt {
-        width: 100%;
-    }
-
-    .spec-col {
-        flex-direction: column;
-        justify-content: space-around;
-        margin: 2rem 0;
-    }
-    .spec-head{
-        font-size: 1.5rem;
-    }
-    .spec-tittle-x{
-        font-size: 2.5rem;
-        margin-bottom: 400px
-    }
-
-
-    .vertic {
-        width: 5px;
-        height: 65px;
-    }
-
-    .spec-txt {
-        gap: 3rem;
-
-    }
-    
-
-    .history {
-        min-width: 100%;
-        flex-direction: column;
-        padding-left: 0;
-        padding-right: 0;
-        margin: 0 ;
-    }
-
-    .his-l,
-    .his-r {
-        width: 100%;
-        padding: 1.5rem;
-
-    }
-
-    .his-tittle {
-        margin-left: 0;
-
-    }
-
-    .his-list {
-        margin-left: 1.5rem;
-    }
-
-    .his-r img {
-        max-width: 400px;
-        
-    }
-
-    .our-work {
-        width: 100%;
-        padding: 2rem 1rem;
-        height: auto;
-    }
-
-    .our-imgs {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .our-imgs img {
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .footer {
-        width: 100%;
-        flex-direction: column;
-        height: auto;
-        padding: 2rem 1rem;
-    }
-
-    .footer-l,
-    .footer-r {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 0;
-    }
-
-    .footer-r iframe {
-        width: 100%;
-        max-width: 600px;
-        height: 400px;
-    }
-    }
-
+   
